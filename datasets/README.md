@@ -1,7 +1,6 @@
 # Data Preparing
 
 1. Download the OCTA dataset from the Baidu web disk and decompress it to the root directory.
-   2.  You can also send an Email directly to jienengchen01 AT gmail.com to request the preprocessed data for reproduction.
 2. The directory structure of the whole project is as follows:
 
 ```bash
@@ -20,17 +19,17 @@
     │    │      ├── data_C
     │    │      ├── data_D
     │    │      ├── Data66_fold_1
-    │    │             ├── train
-    │    │             ├── train_GT
-    │    │             ├── valid
-    │    │             ├── valid_GT
-    │    │             ├── test
-    │    │             ├── test_GT
-    │    │             ├── test_all
-    │    │             └── test_all_GT
+    │    │      │      ├── train
+    │    │      │      ├── train_GT
+    │    │      │      ├── valid
+    │    │      │      ├── valid_GT
+    │    │      │      ├── test
+    │    │      │      ├── test_GT
+    │    │      │      ├── test_all
+    │    │      │      └── test_all_GT
     │    │      ├── Data66_fold_2
-    │    │             ├── train
-    │    │             └── ...
+    │    │      │      ├── train
+    │    │      │      └── ...
     │    │      ├── Data66_fold_3
     │    │      ├── Data66_fold_4
     │    │      ├── Label_GRAY
