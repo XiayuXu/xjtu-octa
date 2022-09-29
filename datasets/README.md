@@ -3,7 +3,7 @@
 1. Download the OCTA dataset from the [Baidu Netdisk](https://pan.baidu.com/s/1F04DSao6tLhbB5h5pUQqcQ?pwd=r5kz) (access code: r5kz) and decompress it to the root directory.
 2. Description of the OCTA dataset:
 * The dataset in folder **Data** was collected at the First Affiliated Hospital of Xi’an Jiaotong University, consisting of 110 normal eyes from 110 subjects. For each eye, both OCTA image (3×3 mm2 optic disc-centered, 320×320 pixels) and fundus image (FOV of 45°, optic disc-centered, 2576×1934 pixels) were captured. The dataset in folder **Data66** was collected at Zhongshan Ophthalmic Center of Sun Yat-sen University, consisting of 908 normal eyes from 476 subjects. For each eye, both OCTA image (6×6 mm2 optic disc-centered, 320×320 pixels) and fundus image (FOV of 45°, optic disc-centered, 1634×1634 pixels) were captured. 
-* The original data is stored in the Origin folder, which contains folders data_A to data_D for OCTA images of four different depths. The corresponding gray and RGB labels for each subject are in folders Label_GRAY and Label_RGB, respectively.
+* The original data is in the Origin folder, which contains folders data_A to data_D for OCTA images of four different depths. The corresponding gray and RGB labels for each subject are in folders Label_GRAY and Label_RGB, respectively.
 * Data_fold_1 to Data_fold_k are the sub-datasets for k-fold cross validation.
 * data_Fusion containing the pseudo-color OCTA images obtained by fusing OCTA images of four depths.
 3. The directory structure of the whole project is as follows:
