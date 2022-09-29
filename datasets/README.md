@@ -1,6 +1,6 @@
 # Data Preparing
 
-1. Download the OCTA dataset from the [Baidu Netdisk](https://pan.baidu.com/s/1LVpg--HKS45mALSgIX5cNg?pwd=dvdj) and decompress it to the root directory.
+1. Download the OCTA dataset from the [Baidu Netdisk](https://pan.baidu.com/s/1LVpg--HKS45mALSgIX5cNg?pwd=dvdj)(access code: dvdj) and decompress it to the root directory.
 2. Description of the OCTA dataset:
 * OCTA Data of 3×3 mm2 and 6×6 mm2 are stored in Data and Data66 respectively.
 * The original data and augmented data are stored in folders Origin and Augment respectively.
