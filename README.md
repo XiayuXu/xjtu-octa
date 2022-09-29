@@ -1,8 +1,7 @@
 # AV-casNet
 AV-casNet: Fully Automatic Arteriole-Venule Segmentation and Differentiation in OCT Angiography
 
-## 1. Download pre-trained swin transformer model (Swin-T)
-* [Get pre-trained model in this link] (https://drive.google.com/drive/folders/1UC3XOoezeum0uck4KBVGa8osahs6rKUY?usp=sharing): Put pretrained Swin-T into folder "pretrained_ckpt/"
+## 1. Download OCTA dataset from the [Baidu Netdisk](https://pan.baidu.com/s/1LVpg--HKS45mALSgIX5cNg?pwd=dvdj) (access code: dvdj) and decompress it to the root directory. Please go to ["./datasets/README.md"](datasets/README.md) for details. 
 
 ## 2. Prepare data
 
