@@ -9,13 +9,13 @@ parser.add_argument('--train_cnn', type=int, default=0,
                     help="training a Unet model for AV segmentation")
 parser.add_argument('--test_cnn', type=int, default=0,
                     help="testing a Unet model for AV segmentation")
-parser.add_argument('--build_graph', type=int, default=0,
+parser.add_argument('--build_graph', type=int, default=1,
                     help="building the connection graph based on CNN segmentation results")
 parser.add_argument('--train_gat', type=int, default=0,
                     help="training a GAT model on graph data")
-parser.add_argument('--test_gat', type=int, default=0,
+parser.add_argument('--test_gat', type=int, default=1,
                     help="testing a GAT model on graph data")
-parser.add_argument('--extract_result', type=int, default=1,
+parser.add_argument('--extract_result', type=int, default=0,
                     help="extract GAT and CNN results to a new folder for post-process")
 parser.add_argument("--name", type=str, default='GAT_final_66',
                         help="name of the folder for saving final result")
@@ -33,7 +33,7 @@ parser.add_argument('--num_workers', type=int, default=4,
                     help="number of dataloader thread")
 parser.add_argument('--pin_memory', type=int, default=4,
                     help="pin_memory")
-parser.add_argument('--Data_path', type=str, default=sys.path[0]+'/datasets/Data66/Origin/OCTA/Data_fold_1',
+parser.add_argument('--Data_path', type=str, default=sys.path[0]+'/datasets/Data66/Data_fold_1',
                     help="OCTA Data_path ")
 parser.add_argument('--cnn_Result_path', type=str, default=sys.path[0] + '/Core/UNet/Result',
                     help="OCTA Result_path ")
@@ -43,11 +43,11 @@ parser.add_argument('--test_all', type=int, default=1,
 # building vessel graph based on results of CNN model
 parser.add_argument("--contour", type=int, default=9,
                         help="Thichness of the contour")
-parser.add_argument("--octa_path", type=str, default=sys.path[0]+'/datasets/Data66/Origin/OCTA/data_Fusion/*.jpg',
+parser.add_argument("--octa_path", type=str, default=sys.path[0]+'/datasets/Data66/data_Fusion/*.jpg',
                     help="the images fused by 4 depth OCTA image")
 parser.add_argument("--seg_path", type=str, default=sys.path[0]+'/Core/UNet/Result/Test_Predict_all/*seg.tif',
                     help="the binary segmentation results of CNN model")
-parser.add_argument("--seg_gt_path", type=str, default=sys.path[0]+'/datasets/Data66/Origin/OCTA/Data_fold_1/test_all_GT/*.tif',
+parser.add_argument("--seg_gt_path", type=str, default=sys.path[0]+'/datasets/Data66/Data_fold_1/test_all_GT/*.tif',
                     help="segmentation ground truth")
 parser.add_argument("--seg_vessel_path", type=str, default=sys.path[0]+'/Core/UNet/Result/Test_Predict_all/*seg_vessel_prob.tif',
                     help="segmentation probability map")
