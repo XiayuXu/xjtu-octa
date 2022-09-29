@@ -99,7 +99,7 @@ def run(args):
         else:
             test_CNN(args)
     if args.build_graph:
-        from Core.GAT.Buildgraph.build_graph_slic66 import main as building_graph
+        from Core.GAT.Buildgraph.build_graph_slic import main as building_graph
         building_graph(args)
     if args.train_gat:
         from Core.GAT.train import main as train_GAT
