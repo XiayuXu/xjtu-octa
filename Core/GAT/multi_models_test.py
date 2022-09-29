@@ -93,9 +93,8 @@ def main(args):
             predict_test, score_test, loss_test = evaluate_test(feats, model, subgraph, labels.float(), loss_fcn)
             predict_test_list.append(predict_test)
             test_score_list.append(score_test)
-            #np.save(save_path + '/result{}.npy'.format(batch), np.array(predict_test))
-        #os.system('python '+Result_path+'/visual.py')
-        #visual(args)
+            np.save(save_path + '/result{}.npy'.format(batch), np.array(predict_test))
+        visual(args)
         acc[models[i]] = evalution(args.cnn_Result_path+'/Test_Predict',
                                    Result_path,
                                    args.Data_path+'/test_GT',

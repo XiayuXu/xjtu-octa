@@ -45,14 +45,11 @@ def evalution(prediction_path, gat_path, gt_path, contour=7):
     # gt_path = '../../../OCTA_1/U-Net/Data/test_GT'
     
     acc = dict()
-    print(gat_path)
     files_pre = natsorted(glob(os.path.join(prediction_path, '*seg.tif')))[:12]
     files_gt = natsorted(glob(os.path.join(gt_path, '*.tif')))[:12]
     files_pre_gat = natsorted(glob(os.path.join(gat_path, '*seg_gat.tif')))[:12]
-    print(files_pre_gat)
     gat_metrics = compute_metric(files_gt, files_pre_gat)
     pre_metrics = compute_metric(files_gt, files_pre)
-    
     gat_metrics_mean = np.mean(gat_metrics, axis= 0)
     pre_metrics_mean = np.mean(pre_metrics, axis=0)
     
