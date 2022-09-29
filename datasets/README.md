@@ -1,7 +1,10 @@
 # Data Preparing
 
 1. Download the OCTA dataset from the Baidu web disk and decompress it to the root directory.
-2. The directory structure of the whole project is as follows:
+2. Description of the OCTA dataset:
+* OCTA Data of 3×3 mm2 and 6×6 mm2 are stored in Data and Data66 respectively.
+
+3. The directory structure of the whole project is as follows:
 
 ```bash
 .
