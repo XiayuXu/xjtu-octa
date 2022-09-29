@@ -3,7 +3,10 @@
 1. Download the OCTA dataset from the Baidu web disk and decompress it to the root directory.
 2. Description of the OCTA dataset:
 * OCTA Data of 3×3 mm2 and 6×6 mm2 are stored in Data and Data66 respectively.
-
+* The original data and augmented data are stored in folders Origin and Augment respectively.
+* data_A to data_D are the folders containing OCTA images of four different depths.
+* Data_fold_1 to Data_fold_k are the sub-datasets for k-fold cross validation.
+* data_Fusion containing the pseudo-color OCTA images obtained by fusing OCTA images of four depths.
 3. The directory structure of the whole project is as follows:
 
 ```bash
@@ -21,7 +24,7 @@
     │    │      ├── data_B
     │    │      ├── data_C
     │    │      ├── data_D
-    │    │      ├── Data66_fold_1
+    │    │      ├── Data_fold_1
     │    │      │      ├── train
     │    │      │      ├── train_GT
     │    │      │      ├── valid
@@ -30,11 +33,11 @@
     │    │      │      ├── test_GT
     │    │      │      ├── test_all
     │    │      │      └── test_all_GT
-    │    │      ├── Data66_fold_2
+    │    │      ├── Data_fold_2
     │    │      │      ├── train
     │    │      │      └── ...
-    │    │      ├── Data66_fold_3
-    │    │      ├── Data66_fold_4
+    │    │      ├── Data_fold_3
+    │    │      ├── Data_fold_4
     │    │      ├── Label_GRAY
     │    │      ├── Label_RGB
     │    │      └── data_Fusion
