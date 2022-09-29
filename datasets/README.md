@@ -1,40 +1,10 @@
 # Data Preparing
 
-1. Access to the synapse multi-organ dataset:
-   1. Sign up in the [official Synapse website](https://www.synapse.org/#!Synapse:syn3193805/wiki/) and download the dataset. Convert them to numpy format, clip the images within [-125, 275], normalize each 3D image to [0, 1], and extract 2D slices from 3D volume for training cases while keeping the 3D volume in h5 format for testing cases.
+1. Download the OCTA dataset from the Baidu web disk and decompress it to the root directory.
    2.  You can also send an Email directly to jienengchen01 AT gmail.com to request the preprocessed data for reproduction.
 2. The directory structure of the whole project is as follows:
 
 ```bash
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@XiayuXu 
-XiayuXu
-/
-xjtu-octa
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-xjtu-octa/datasets/README
-@XiayuXu
-XiayuXu Create README
-Latest commit 49b0a86 2 hours ago
- History
- 1 contributor
-42 lines (42 sloc)  1.46 KB
-
 .
 └── datasets
     ├──Data66
