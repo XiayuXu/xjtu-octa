@@ -17,7 +17,7 @@ python terminal.py --train_cnn=1 --test_cnn=1 --build_graph=1 --train_gat=1 --te
 ```
 - where =1 means execute the process and =0 means not to execute.
 - The binaried segmentation results will be saved in the folder GAT_final. If you want to see the probability map and superpixel results, you can go to the result folders in ["./Core/UNet/"](Core/UNet/Result/) and ["./Core/GAT/"](Core/GAT/result_9/) for details.
-- If you want to run some steps independently, you can simply set the parameter value of the corresponding step to 1 and the parameter value of the other steps to 0. Take training CNN alone as an example:
+- If you want to run some steps independently, you can simply set the parameter value of the corresponding step to 1 and the parameter value of the other steps to 0. Take training and testing a CNN model alone as an example:
 ```bash
 python terminal.py --train_cnn=1 --test_cnn=1 --build_graph=0 --train_gat=0 --test_gat=0
 ```
