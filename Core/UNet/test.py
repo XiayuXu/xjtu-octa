@@ -366,7 +366,7 @@ if __name__ == '__main__':
     """ 加载模型参数 """
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--Data_path', type=str, default='../../datasets/Data66/Origin/OCTA/Data_fold_1',
+    parser.add_argument('--Data_path', type=str, default='../../datasets/Data66/OCTA/Data_fold_1',
                         help="OCTA Data_path ")
     parser.add_argument('--Result_path', type=str, default='./Result',
                         help="OCTA Result_path ")
