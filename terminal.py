@@ -3,21 +3,20 @@ import os
 import numpy as np
 import sys
 # control commands
-
 parser = argparse.ArgumentParser()
-parser.add_argument('--train_cnn', type=int, default=0,
+parser.add_argument('--train_cnn', type=int, default=1,
                     help="training a Unet model for AV segmentation")
-parser.add_argument('--test_cnn', type=int, default=0,
+parser.add_argument('--test_cnn', type=int, default=1,
                     help="testing a Unet model for AV segmentation")
 parser.add_argument('--build_graph', type=int, default=1,
                     help="building the connection graph based on CNN segmentation results")
-parser.add_argument('--train_gat', type=int, default=0,
+parser.add_argument('--train_gat', type=int, default=1,
                     help="training a GAT model on graph data")
 parser.add_argument('--test_gat', type=int, default=1,
                     help="testing a GAT model on graph data")
-parser.add_argument('--extract_result', type=int, default=0,
+parser.add_argument('--extract_result', type=int, default=1,
                     help="extract GAT and CNN results to a new folder for post-process")
-parser.add_argument("--name", type=str, default='GAT_final_66',
+parser.add_argument("--name", type=str, default='GAT_final',
                         help="name of the folder for saving final result")
 parser.add_argument("--gpu", type=int, default=0,
                         help="which GPU to use. Set -1 to use CPU.")
