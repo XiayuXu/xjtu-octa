@@ -7,6 +7,7 @@ You can download the datasets from the [Baidu Netdisk](https://pan.baidu.com/s/1
 ## 2. Environment
 
 - Please prepare an environment with python=3.8, and then use the command "pip install -r requirements.txt" for the dependencies.
+- You should also install MATLAB 2020b or later MATLAB version for running post-processing and evaluation code.
 
 ## 3. Run the whole workflow
 
@@ -19,27 +20,11 @@ python terminal.py --train_cnn=1 --test_cnn=1 --build_graph=1 --train_gat=1 --te
 - If you want to run some steps independently, you can simply set the parameter value of the corresponding step to 1 and the parameter value of the other steps to 0. Take training CNN alone as an example:
 ```bash
 python terminal.py --train_cnn=1 --test_cnn=1 --build_graph=0 --train_gat=0 --test_gat=0
-```
-```bash
-python terminal.py --dataset Synapse --cfg configs/swin_tiny_patch4_window7_224_lite.yaml --root_path your DATA_DIR --max_epochs 150 --output_dir your OUT_DIR  --img_size 224 --base_lr 0.05 --batch_size 24
-```
 
-- Test 
+## 4. Post-processing and evaluation
 
-```bash
-sh test.sh or python test.py --dataset Synapse --cfg configs/swin_tiny_patch4_window7_224_lite.yaml --is_saveni --volume_path your DATA_DIR --output_dir your OUT_DIR --max_epoch 150 --base_lr 0.05 --img_size 224 --batch_size 24
-```
-## 4. Build the graph data for segmentation maps
+- This part of the code is implemented by MATLAB 2020b. When you have completed all the above processes, you can perform ["./post_processing.mlx"](post_processing.mlx) in MATLAB to get the final visual segmentation results and quantitative evaluation results.
 
-- Train
-
-```bash
-python terminal.py --dataset Synapse --cfg configs/swin_tiny_patch4_window7_224_lite.yaml --root_path your DATA_DIR --max_epochs 150 --output_dir your OUT_DIR  --img_size 224 --base_lr 0.05 --batch_size 24
-```
-
-## References
-* [TransUnet](https://github.com/Beckschen/TransUNet)
-* [SwinTransformer](https://github.com/microsoft/Swin-Transformer)
 
 ## Citation
 
