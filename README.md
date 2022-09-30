@@ -10,7 +10,7 @@ You can download the datasets from the [Baidu Netdisk](https://pan.baidu.com/s/1
 
 ## 3. Run the whole workflow
 
-- the whole workflow includes training and testing a CNN model, building the graph data based on CNN predictions, and training and testing a GAT model. If you want to run the all processes automatically, you can type the following and the segmentation result will be save in the folder GAT_final:
+- the whole workflow includes training and testing a CNN model, building the graph data based on CNN predictions, and training and testing a GAT model. If you want to run the all processes automatically, you can type the following and the segmentation result will be saved in the folder GAT_final:
 python terminal.py --train_cnn=1 --test_cnn=1 --build_graph=1 --train_gat=1 --test_gat=1 --extract_result=1 --name='GAT_final'
 - the whole workflow includes training and testing a CNN model, building the graph data based on CNN predictions, and training and testing a GAT model. The batch size we used is 4. If you do not have enough GPU memory, the bacth size can be reduced to 2.
 
