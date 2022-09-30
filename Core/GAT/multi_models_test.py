@@ -124,7 +124,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='GAT')
     parser.add_argument('--gat_Result_path', type=str, default=sys.path[0] + '/Core/GAT',
                         help="OCTA Result_path ")
-    parser.add_argument('--Data_path', type=str, default=sys.path[0] + '/Data66/Data_fold_1',
+    parser.add_argument('--Data_path', type=str, default=sys.path[0] + '/Data66/OCTA/Data_fold_1',
                         help="OCTA Data_path ")
     parser.add_argument('--cnn_Result_path', type=str, default=sys.path[0] + '/Core/UNet/Result',
                         help="OCTA Result_path ")
