@@ -20,11 +20,11 @@ python terminal.py --train_cnn=1 --test_cnn=1 --build_graph=1 --train_gat=1 --te
 - If you want to run some steps independently, you can simply set the parameter value of the corresponding step to 1 and the parameter value of the other steps to 0. Take training CNN alone as an example:
 ```bash
 python terminal.py --train_cnn=1 --test_cnn=1 --build_graph=0 --train_gat=0 --test_gat=0
+```
 
 ## 4. Post-processing and evaluation
 
 - This part of the code is implemented by MATLAB 2020b. When you have completed all the above processes, you can perform ["./post_processing.mlx"](post_processing.mlx) in MATLAB to get the final visual segmentation results and quantitative evaluation results.
-
 
 ## Citation
 
