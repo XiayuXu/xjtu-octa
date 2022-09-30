@@ -4,15 +4,11 @@ AV-casNet: Fully Automatic Arteriole-Venule Segmentation and Differentiation in 
 ## 1. Prepare OCTA datasets 
 You can download the datasets from the [Baidu Netdisk](https://pan.baidu.com/s/1F04DSao6tLhbB5h5pUQqcQ?pwd=r5kz) (access code: r5kz) and decompress it to the root directory. Please go to ["./datasets/README.md"](datasets/README.md) for details. 
 
-## 2. Prepare data
+## 2. Environment
 
-- The datasets we used are provided by TransUnet's authors. Please go to ["./datasets/README.md"](datasets/README.md) for details, or please send an Email to jienengchen01 AT gmail.com to request the preprocessed data. If you would like to use the preprocessed data, please use it for research purposes and do not redistribute it (following the TransUnet's License).
+- Please prepare an environment with python=3.8, and then use the command "pip install -r requirements.txt" for the dependencies.
 
-## 3. Environment
-
-- Please prepare an environment with python=3.7, and then use the command "pip install -r requirements.txt" for the dependencies.
-
-## 4. Train/Test
+## 3. Train/Test
 
 - Run the train script on synapse dataset. The batch size we used is 24. If you do not have enough GPU memory, the bacth size can be reduced to 12 or 6 to save memory.
 
